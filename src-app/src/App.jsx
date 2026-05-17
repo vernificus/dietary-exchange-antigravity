@@ -279,6 +279,9 @@ export default function App() {
                 placeholder="e.g. Avocado Toast"
                 value={foodName}
                 onChange={e => setFoodName(e.target.value)}
+                autoComplete="on"
+                autoCorrect="on"
+                autoCapitalize="words"
                 required
               />
             </div>
