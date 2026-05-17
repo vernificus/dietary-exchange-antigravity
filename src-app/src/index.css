@@ -27,28 +27,24 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-  max-width: 100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
   background: radial-gradient(circle at 100% 0, #1e1b4b, #0f172a) fixed;
-  place-items: center;
+  min-width: 320px;
   min-height: 100vh;
-  margin: 0;
   display: flex;
-  overflow-x: hidden;
-  max-width: 100%;
 }
 
 #root {
-  box-sizing: border-box;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
-  overflow-x: hidden;
 }
 
 @media (width <= 768px) {
@@ -148,7 +144,10 @@ button.secondary:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
+  min-width: 0;
 }
+
+.app-container > * { min-width: 0; }
 
 @media (width >= 1024px) {
   .app-container { grid-template-columns: 350px 1fr; }

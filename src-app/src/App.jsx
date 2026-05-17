@@ -210,7 +210,7 @@ export default function App() {
               type="date"
               value={displayDate}
               onChange={e => setDisplayDate(e.target.value)}
-              style={{ marginTop: '0.5rem', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc' }}
+              style={{ marginTop: '0.5rem', padding: '0.5rem', borderRadius: '4px', border: '1px solid #ccc', width: 'auto' }}
             />
           </div>
           <button
